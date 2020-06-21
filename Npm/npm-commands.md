@@ -1,10 +1,26 @@
 
+# Npm Commands 
+
+- [Get info](#get-info)
+
+- [initialize the project](#initialize-the-project)
+
+- [Managing packages](#managing-packages)
+
+- [Run scripts](#run-scripts)
+
+- [Publish packages](#publish-packages)
+
+</br>
+
+
+
 # Get info
 
-#### getting the version of npm 
+## getting the version of npm 
 - `npm -v (or --version)`
 
-#### get the npm documentation 
+## get the npm documentation 
 - `npm help` *or* `npm`
 
 - `npm [command] -h`
@@ -15,10 +31,10 @@
 
   *get the full documentation of the specific command*
   
-#### Find root folder
+## Find root folder
 - `npm root -g`
 
-#### Listing packages
+## Listing packages
 - `npm list `  *or* ` npm ls`
 
   *list all the packages installed each with their dependencies,  if with `-g` flag will list the global packages*
@@ -43,7 +59,7 @@
 
   *list all the non devDependencies* 
   
-#### get info about a package 
+## get info about a package 
 
 *can specify '-g' to make npm look at global packages*
 
@@ -59,7 +75,7 @@
       - `npm show lodash versions`  *get an array of all the version of lodash.*
       - `npm show express dependencies`  *get all the dependencies which express depends on.*
 
-#### get info about the vesions of the packages that need to be updated
+## get info about the vesions of the packages that need to be updated
 
 *either global or local ( it depends on how are installed in package.json, if with '~, ^ or =' )*
 
@@ -67,7 +83,7 @@
 
   *add `-g` to make npm look for global packagees*
 
-#### Additional info about the project and packages
+## Additional info about the project and packages
 
 - `npm info`
 
@@ -77,15 +93,16 @@
 
   *direct to the gitHub browser page of the package* e.g.* `npm repo express`
 
+</br>
 
 
 # initialize the project 
 
-#### Create package json
+## Create package json
 - `npm init`
 - `npm init -y (or --yes)` *skip all the questions*
 
-#### Set defaults properties 
+## Set defaults properties 
 
 *set default properties of the project to package.json*
 
@@ -98,7 +115,7 @@
   - `npm set init-name "project-something"`
   - `npm set init-author-name "mario guzzman"`
 
-#### Get defaults
+## Get defaults
 
 *get properties of package.json based on the name provided*
 
@@ -106,20 +123,21 @@
 
   *e.g.*  `npm get init-license`
 
-#### Remove defaults
+## Remove defaults
 - `npm delete [property]`
 
   *e.g.*  `npm delete init-license`
 
-#### Move to another folder
+## Move to another folder
 - `npm install`
 - `npm install --production`
 
+</br>
 
 
 # Managing packages 
 
-#### Installing local packages
+## Installing local packages
 
 *install packages in the current folder, **will automatically be saved as dependencies ** in package.json.*
 
@@ -127,13 +145,13 @@
 
    *e.g.*  `npm install lodash`
 
-#### install local packages as devDependencies 
+## install local packages as devDependencies 
 
 *install packages and save them as devDependencies in package.json*
 
 - `npm install [package-name] [package-name] --save-dev`
 
-#### Install global module
+## Install global module
 
 *install packages globally, use just when they **require the command line in order to work***
 
@@ -141,7 +159,7 @@
 
     *e.g.* `node install -g nodemon`
 
-#### Install certain versions
+## Install certain versions
 - `npm install [package-name]@4.17.3  ` 
 
   *will install exactly this vesrion.  e.g.*  `npm install lodash@4.17.3  `
@@ -158,7 +176,7 @@
 
 - *install the lastest major version, npm usually does it automatically but who knows...*
 
-#### Removing modules
+## Removing modules
 - `npm remove [package-name]`
 
   *remove installed package and delete dependency from package.json*
@@ -171,7 +189,7 @@
 
   *Remove global packages* *e.g.* `node remove -g nodemon`
 
-#### Update
+## Update
 
 - `npm update`
 
@@ -185,47 +203,48 @@
 
   *update npm with npm itself*
 
-#### Install local package 
+## Install local package 
 
 - `npm install [path-to-folder]`
 
   *e.g.* `npm install ./my-package `
 
-
+</br>
 
 # Run scripts 
 
-#### run any custom command under 'scripts' in package.json (in the main directory)
+## run any custom command under 'scripts' in package.json (in the main directory)
 - `npm run [command]` 
 - `npm run check` (usually in package.json will be "check": "eslint main.js" -> this won't work cause .eslint conf file is not configured yet, for this you need npx to access the command eslint)
 
-#### run special character commads under 'scripts', full list using 'npm help npm-scripts'
+## run special character commads under 'scripts', full list using 'npm help npm-scripts'
 - `run start` (in package.json declared as "start": "node main.js")
 - `run test`  (declared usually as "test": "jest" -> third party package for testing)
 - `npm pretest` (automatically run before npm start testing, usually -> "pretest": "node -e 'console.log(\"starting testing\")'" or can run a entire new file for pretesting)
 - `npm posttest` (automatically run after the test is done, usually -> "posttest": "node -e 'console.log(\"done testing\")'")
 
-#### Npx: run commands not declared in scripts and bound to local packages (accessible only via npm)
+## Npx: run commands not declared in scripts and bound to local packages (accessible only via npm)
 - `npx jest` (equivalent to npm test)
 - `npx eslint --init` (this is needed to create a .eslint confiuration file before checking, after this *you can use* either- `npm run check` or `npx eslint main.js` )
 
+</br>
 
 
 # Publish packages
 
-#### login the account 
+## login the account 
 
 *login the shell to an existing Npm account*
 
 - `npm login` 
 
-#### publish a package
+## publish a package
 
 - `npm publish` 
 
   *will publish the package from the current directory*
 
-#### update the package 
+## update the package 
 
 *update the version of the package in Npm*
 
@@ -243,7 +262,7 @@
 
   *publish the changes to npm*
 
-#### publish beta version 
+## publish beta version 
 
 *`beta` or `alpha` are just convenstions, can be used any name.*
 
