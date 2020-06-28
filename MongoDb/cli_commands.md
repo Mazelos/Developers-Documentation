@@ -297,12 +297,14 @@ db.users.find().forEach(document => {
 db.users.find().forEach(document => print(`id ${document.id}`))
 ```
 
-list documents using *greater than* and *less than* :
+list documents using *Comparison Query Operators* :
 
 - `$gt` greater than .
 - `$gte` greater or equal than.
 - `$lt` less than.
 - `$lte` less or equal than.
+- `$ne` not equal to.
+- `$in` exists in.
 
 ```
 db.users.find({ age:{ $gt: 35 } })
