@@ -1,8 +1,8 @@
 # Git Commands
 Some useful commands for manage a Git Repository and interact with Github.
 
-- [Git Commands](#git-commands)
   - [Basic Workflow](#basic-workflow)
+
     - [Initialize a repo](#initialize-a-repo)
     - [Check status](#check-status)
     - [Add files](#add-files)
@@ -10,17 +10,23 @@ Some useful commands for manage a Git Repository and interact with Github.
     - [Commit](#commit)
     - [Log the commit tree](#log-the-commit-tree)
     - [Show commit details](#show-commit-details)
+  
   - [Backtracking](#backtracking)
+
     - [Checkout](#checkout)
     - [Unstage files](#unstage-files)
     - [Change HEAD commit](#change-head-commit)
+  
   - [Branching](#branching)
+
     - [Show branches](#show-branches)
     - [Create a branch](#create-a-branch)
     - [Switch branch](#switch-branch)
     - [Merge changes](#merge-changes)
     - [Delete a branch](#delete-a-branch)
+  
   - [Teamwork](#teamwork)
+
     - [Clone a repo](#clone-a-repo)
     - [Show connected remotes](#show-connected-remotes)
     - [Fetch changes](#fetch-changes)
