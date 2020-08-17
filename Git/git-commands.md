@@ -1,14 +1,38 @@
 # Git Commands
 Some useful commands for manage a Git Repository and interact with Github.
 
+- [Git Commands](#git-commands)
+  - [Basic Workflow](#basic-workflow)
+    - [Initialize a repo](#initialize-a-repo)
+    - [Check status](#check-status)
+    - [Add files](#add-files)
+    - [See changes](#see-changes)
+    - [Commit](#commit)
+    - [Log the commit tree](#log-the-commit-tree)
+    - [Show commit details](#show-commit-details)
+  - [Backtracking](#backtracking)
+    - [Checkout](#checkout)
+    - [Unstage files](#unstage-files)
+    - [Change HEAD commit](#change-head-commit)
+  - [Branching](#branching)
+    - [Show branches](#show-branches)
+    - [Create a branch](#create-a-branch)
+    - [Switch branch](#switch-branch)
+    - [Merge changes](#merge-changes)
+    - [Delete a branch](#delete-a-branch)
+  - [Teamwork](#teamwork)
+    - [Clone a repo](#clone-a-repo)
+    - [Show connected remotes](#show-connected-remotes)
+    - [Fetch changes](#fetch-changes)
+    - [Merge from remote](#merge-from-remote)
+    - [Push changes](#push-changes)
 
 <br/>
 
+## Basic Workflow
 
-## Basic Git Workflow
 
-
-### Initialize a repo
+### Initialize a repo 
 
 Initialize a local repository 
 
@@ -18,7 +42,7 @@ git init
 <br/>
 
 
-### Check status
+### Check status 
 
 check the status of the repository
 
@@ -28,7 +52,7 @@ git status
 <br/>
 
 
-### Add files
+### Add files 
 
 Add files to the staging area (before commit).
 
@@ -53,7 +77,7 @@ Add files to the staging area (before commit).
 <br/>
 
 
-### See changes
+### See changes 
 
 See the changes of a defined unstaged file, compared to the last commit.
 
@@ -74,7 +98,7 @@ git commit -m 'commit message'
 <br/>
 
 
-### Log the commit tree
+### Log the commit tree 
 
 View all the commits tree, (logs, author and date).
 
@@ -84,7 +108,7 @@ git log
 <br/>
 
 
-### Show commit details
+### Show commit details 
 
 Show all the details about a commit and file changes.
 
