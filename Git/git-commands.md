@@ -1,18 +1,11 @@
-
-
-
-
 # Git Commands
-
 Some useful commands for manage a Git Repository and interact with Github.
 
 
 <br/>
-<br/>
 
 
 ## Basic Git Workflow
-<br/>
 
 
 ### Initialize a repo
@@ -112,7 +105,6 @@ Show all the details about a commit and file changes.
 
 
 ## Backtracking 
-<br/>
 
 
 ### Checkout
@@ -155,7 +147,6 @@ git reset [sha-code]
 
 
 ## Branching 
-<br/>
 
 
 ### Show branches
@@ -207,7 +198,6 @@ git branch -d [branch name]
 
 ## Teamwork
 
-<br/>
 
 ### Clone a repo
 
